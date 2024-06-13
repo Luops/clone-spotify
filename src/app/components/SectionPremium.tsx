@@ -41,10 +41,11 @@ function SectionPremium({}: Props) {
     },
   ];
   return (
-    <section 
-    id="Premium"
-    className="w-full h-[100vh] relative flex items-center justify-center bg-gradient-to-r from-fuchsia-400 to-purple-400">
-      {/* Background de fundo */}
+    <section
+      id="Premium"
+      className="w-full h-[100vh] relative flex items-center justify-center bg-gradient-to-r from-fuchsia-400 to-purple-400"
+    >
+      {/* Background */}
       <Image
         src={Background}
         alt="Background"

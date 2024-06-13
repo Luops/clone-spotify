@@ -12,8 +12,10 @@ type Props = {};
 function SectionDownload({}: Props) {
   return (
     <section
-    id="Baixar"
-    className="w-full relative py-[6rem] bg-gradient-to-r from-fuchsia-400 to-purple-400">
+      id="Baixar"
+      className="w-full relative py-[6rem] bg-gradient-to-r from-fuchsia-400 to-purple-400"
+    >
+      {/*Background*/}
       <Image
         src={Background}
         alt="Background"
@@ -22,6 +24,7 @@ function SectionDownload({}: Props) {
         quality={100}
         className="opacity-40"
       />
+      {/*Conteudo*/}
       <div className="flex flex-col items-start justify-start pl-[10rem] gap-2 text-white">
         <h3 className="text-5xl font-semibold">Fácil</h3>
         <h4 className="text-3xl text-emerald-300 mt-6">Buscar</h4>
@@ -40,8 +43,17 @@ function SectionDownload({}: Props) {
           pra você. Ou relaxe e curta uma das rádios.
         </p>
       </div>
-      <Image src={Iphone1} alt="Iphone1" className="absolute -top-10 left-[40%] w-[300px] rotate-12" />
-      <Image src={Iphone2} alt="Iphone2" className="absolute top-20 left-[65%] w-[300px] rotate-12" />
+      {/* Imagem dos Iphones */}
+      <Image
+        src={Iphone1}
+        alt="Iphone1"
+        className="absolute -top-10 left-[40%] w-[300px] rotate-12"
+      />
+      <Image
+        src={Iphone2}
+        alt="Iphone2"
+        className="absolute top-20 left-[65%] w-[300px] rotate-12"
+      />
     </section>
   );
 }

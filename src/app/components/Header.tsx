@@ -36,6 +36,7 @@ function Header({}: Props) {
   // State para ver se foi clicado em alguma opção do header
   const [clicked, setClicked] = React.useState<string>("");
 
+  // Variavel para levar a tela até a opção clicada
   const handleNavigation = (sectionId: string) => {
     const section = document.getElementById(sectionId);
 
