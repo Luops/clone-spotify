@@ -13,6 +13,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        slideIn: {
+          "0%": {
+            transform: "translateX(15%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 2s ease-in-out forwards",
+      },
+    },
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
     },
   },
   plugins: [],
